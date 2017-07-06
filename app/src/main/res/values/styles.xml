@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- activity_main -->
+
+    <!-- Main Activity Filler Image -->
+    <style name="main_image">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/marginTop_image</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom_image</item>
+    </style>
+
+    <!-- Clear EdiText Buttons -->
+    <style name="clear_button">
+        <item name="android:background">@drawable/clear_button</item>
+        <item name="android:layout_marginLeft">@dimen/margin_clear_button</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- EditText Margins -->
+    <style name="editTextParent">
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+    </style>
+
+    <!-- EditText attributes -->
+    <style name="editTextView">
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!-- Find Books Button -->
+    <style name="findButton">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <!-- Spinner Parent View-->
+    <style name="spinnerParent">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <!--Spinner TextView to match Edit TextViews -->
+    <style name="spinnerTextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+    <!-- Spinner options -->
+    <style name="spinnerOptions">
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <!-- list_item  -->
+
+    <!-- Titles -->
+    <style name="bookItemTitles">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">@dimen/margin_titles</item>
+    </style>
+
+    <!-- TextViews -->
+    <style name="bookItemText">
+        <item name="android:maxLines">4</item>
+
+        <!-- prevents breaking text in the middle with "..." -->
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Book Information View -->
+    <style name="bookInfoView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:padding">@dimen/thumb_padding</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- Thumb Images View -->
+    <style name="bookImage">
+        <item name="android:padding">@dimen/thumb_padding</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+</resources>

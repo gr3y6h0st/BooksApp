@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nanodegree.android.booksapp.MainActivity"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_height_image"
+            android:layout_gravity="center"
+            android:src="@drawable/mainactivityimage"
+            style="@style/main_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            style="@style/editTextParent">
+
+            <EditText
+                android:id="@+id/search_title_EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/search_title_EditText"
+                style="@style/editTextView"/>
+
+            <Button
+                android:id="@+id/clear_title_button"
+                android:layout_width="@dimen/width_height_clear_button"
+                android:layout_height="@dimen/width_height_clear_button"
+                style="@style/clear_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            style="@style/editTextParent">
+
+            <EditText
+                android:id="@+id/search_author_EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/search_author_EditText"
+                style="@style/editTextView"/>
+
+            <Button
+                android:id="@+id/clear_author_button"
+                android:layout_width="@dimen/width_height_clear_button"
+                android:layout_height="@dimen/width_height_clear_button"
+                style="@style/clear_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            style="@style/spinnerParent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/spinner_text"
+                style="@style/spinnerTextView"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                style="@style/spinnerOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_filter_results" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_Button"
+            style="@style/findButton"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

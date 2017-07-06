@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- list_item -->
+    <dimen name="margin_titles">8dp</dimen>
+
+    <dimen name="thumb_height">188dp</dimen>
+    <dimen name="thumb_width">164dp</dimen>
+    <dimen name="thumb_padding">8dp</dimen>
+
+    <!-- activity_main  -->
+
+    <!-- Image TextView Graphic -->
+    <dimen name="width_height_image">240dp</dimen>
+    <dimen name="marginTop_image">32dp</dimen>
+    <dimen name="marginBottom_image">32dp</dimen>
+
+    <!-- Edit Text Margins -->
+    <dimen name="margin">16dp</dimen>
+
+    <!-- Clear Button -->
+    <dimen name="width_height_clear_button">32dp</dimen>
+    <dimen name="margin_clear_button">8dp</dimen>
+
+</resources>

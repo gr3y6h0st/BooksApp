@@ -1,6 +1,5 @@
 package com.nanodegree.android.booksapp;
 
-import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -36,12 +35,10 @@ public final class QueryUtils {
     private static final String KEY_LANGUAGE = "language";
     private static final String KEY_PREVIEWLINK = "previewLink";
 
-    public static String errorMessage = null;
+    public static String errorMSG = null;
 
     /** Tag for log message */
     public static final String LOG_TAG = QueryUtils.class.getSimpleName();
-
-    private static Context mContext = MainActivity.mContext;
 
     private QueryUtils(){
     }
@@ -212,7 +209,8 @@ public final class QueryUtils {
                 bookInfos.add(bookInfo);
             }
         } catch (JSONException e){
-                Log.e(LOG_TAG, "Problem parsing JSON results @QueryUtils", e);
+            Log.e(LOG_TAG, "Issue: JSON results parsing error @QueryUtils", e);
+            errorMSG = "JSON results parsing error. JSONExection: " + e;
         }
         return bookInfos;
     }

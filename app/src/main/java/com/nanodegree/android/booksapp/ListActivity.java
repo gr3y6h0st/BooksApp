@@ -178,9 +178,9 @@ public class ListActivity extends AppCompatActivity implements
     public void onLoadFinished(Loader<ArrayList<BookInfo>> loader, ArrayList<BookInfo> bookInfo) {
         // Clear adapter
         bookAdapter.clear();
-        if (QueryUtils.errorMessage != null) {
-            Toast.makeText(MainActivity.mContext, QueryUtils.errorMessage, Toast.LENGTH_SHORT).show();
-            QueryUtils.errorMessage = null;
+        if (QueryUtils.errorMSG != null) {
+            Toast.makeText(MainActivity.mContext, QueryUtils.errorMSG, Toast.LENGTH_SHORT).show();
+            QueryUtils.errorMSG = null;
         }
 
         // Validate {@link BookInfo} data, bookAdapter adds data to listView.

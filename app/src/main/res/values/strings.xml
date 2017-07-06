@@ -1,33 +1,33 @@
 <resources>
-<!-- Activity names -->
-<string name="app_name">Librarian: A Book Finder App</string>
-<string name="name_ListActivity">List of Books Matches</string>
+    <!-- Activity names -->
+    <string name="app_name">Librarian: A Book Finder App</string>
+    <string name="name_ListActivity">List of Books Matches</string>
 
-<!-- Strings for activity_main.xml -->
-<string name="search_Button">Find Books</string>
-<string name="search_title_EditText">Enter a Book Title...</string>
-<string name="search_author_EditText">Enter author name...</string>
+    <!-- Strings for activity_main.xml -->
+    <string name="search_Button">Find Books</string>
+    <string name="search_title_EditText">Enter a Book Title...</string>
+    <string name="search_author_EditText">Enter author name...</string>
 
-<!-- Book Detail Information  -->
-<string name="book_title">Title: </string>
-<string name="author">Author: </string>
-<string name="page_count">Pages: </string>
-<string name="language">Language: </string>
-<string name="description">Description: </string>
+    <!-- Book Detail Information  -->
+    <string name="book_title">Title: </string>
+    <string name="author">Author: </string>
+    <string name="page_count">Pages: </string>
+    <string name="language">Language: </string>
+    <string name="description">Description: </string>
 
-<!-- Text for Spinner Filter -->
-<string name="spinner_text">Results per page: </string>
+    <!-- Text for Spinner Filter -->
+    <string name="spinner_text">Results per page: </string>
 
-<!-- Options for Spinner -->
-<string name="spinner_default">5</string>
+    <!-- Options for Spinner -->
+    <string name="spinner_default">5</string>
     <string-array name="spinner_filter_results">
         <item>5</item>
         <item>10</item>
         <item>25</item>
     </string-array>
 
-<!-- Errors -->
-<string name="no_internet">Internet Connection Required/Not Found</string>
-<string name="no_books">Found 0 search results.</string>
+    <!-- Errors -->
+    <string name="no_internet">Internet Connection Required/Not Found</string>
+    <string name="no_books">Found 0 search results.</string>
 
 </resources>
